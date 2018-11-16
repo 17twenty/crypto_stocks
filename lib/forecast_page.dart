@@ -41,7 +41,7 @@ class _ForecastPageState extends State<ForecastPage> {
     );
 
     this.setState(() {
-      data = JSON.decode(response.body);
+      data = json.decode(response.body);
       isLoading = false;
       max = data['forecast'][0]['usd'];
       min = data['forecast'][0]['usd'];

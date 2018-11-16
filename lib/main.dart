@@ -38,7 +38,7 @@ class HomePageState extends State<HomePage> {
     );
 
     this.setState(() {
-      data = JSON.decode(response.body);
+      data = json.decode(response.body);
       isLoading = false;
     });
     String content = response.body;
@@ -61,7 +61,7 @@ class HomePageState extends State<HomePage> {
       String contents = await file.readAsString();
 
       this.setState(() {
-        data = JSON.decode(contents);
+        data = json.decode(contents);
         isLoading = false;
       });
       print(data);
